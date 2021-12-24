@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>audibooks</title>
+        <link rel="stylesheet" href="{% static 'player/homepage.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row1">
+                <div class="logo"><img src="{%static 'logo.png'%}"></div>
+                <div class="search">
+                    <input type="search" placeholder="Enter Book Name">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class="buttons">
+                    <a href="{% url 'login_page'%}" id="login">Log In</a>
+                    <a href="{% url 'signup_page'%}" id="signup">Sign Up</a>
+                </div>  
+            </div>
+            <div class="row2">
+                <img src="" alt='book1'>
+            </div>
+            <div class="row3">
+                <div class="flex-item">
+                    <img src='' alt="book2" srcset="">
+                    <!-- <h3>title</h3>
+                    <p>Book Information</p> -->
+                </div>
+                <div class="flex-item">
+                    <img src='' alt="book3" srcset="">
+                    <!-- <h3>title</h3>
+                    <p>Book Information</p> -->
+                </div>
+                <div class="flex-item">
+                    <img src='' alt="book4" srcset="">
+                    <!-- <h3>title</h3>
+                    <p>Book Information</p> -->
+                </div>
+                <div class="flex-item">
+                    <img src='' alt="book5" srcset="">
+                    <!-- <h3>title</h3>
+                    <p>Book Information</p> -->
+                </div>
+                <div class="flex-item">
+                    <img src='' alt="book6" srcset="">
+                    <!-- <h3>title</h3>
+                    <p>Book Information</p> -->
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'player/homepage.js' %}"></script>
+    </body>
+</>

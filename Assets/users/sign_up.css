@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    width: 60vh;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    /* margin-bottom: 50px; */
+    margin: 40px 0px;
+    color: #77E4D4;
+}
+
+body{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: dodgerblue;
+}
+
+.container{
+    text-align: center;
+    padding: 20px 25px 10px 25px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+    width: 50vh;
+}
+
+input::placeholder{
+    font-size: medium;
+    font-weight: bolder;
+}
+
+#new{
+    font-size: 25px;
+    text-align: left;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+#statement{
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs{
+    margin: 10px 0px;
+    position: relative;
+    border-color: 1px lightgray;
+}
+
+.inputs input{
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    font-size: 17px;
+    font-weight: 400;
+} 
+
+.inputs i{
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+
+.inputs small{
+    position: absolute;
+    right: 10px;
+    bottom: -15px;
+}
+
+.wrong,.mssg{
+    color: red;
+    visibility: hidden;
+}
+.correct{
+    color:green;
+    visibility: hidden;
+}
+
+#btn{
+    padding: 10px 10px;
+    font-size: large;
+    margin: 20px 0px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+#btn:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+#sign-in{
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#sign-in:hover{
+    color: black;
+    text-decoration: underline;
+}

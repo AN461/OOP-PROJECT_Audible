@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio books</title>
+    <link rel="stylesheet" href="{% static 'users/login.css' %}">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30b80cadca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="heading">
+        <p>Express🎧📚</p>
+    </div>
+    <form action="{% url 'loginuser' %}" id="form-validation" method="POST">
+        {% csrf_token %}
+        <h2 style="text-align: center;">Login</h2>
+        <div class="inputs">
+            <input type="email" name="email" id="e-mail" placeholder="E-mail">
+            <i class="fas fa-exclamation-circle wrong"></i>
+            <i class="fas fa-check-circle correct"></i>
+            <small class="mssg">Error message</small>
+        </div>
+        <div class="inputs">
+            <input type="password" name="password" id="pass-word" placeholder="Password">
+            <a id="forgot" href="{% url 'forgotpassword_page' %}">Forgot Password</a>
+            <i class="fas fa-exclamation-circle wrong"></i>
+            <i class="fas fa-check-circle correct"></i>
+            <i class="far fa-eye"></i>
+            <i class="far fa-eye-slash"></i>
+            <small class="mssg">Error message</small>
+        </div>
+        <div class="login">
+            <button id="btn" type="submit">login</button>
+        </div>
+        <div class="newuser">
+            <h4>or</h4>
+            <p>Newuser?</p>
+            <a href="{% url 'signup_page' %}">Sign up</a>
+        </div>
+    </form>
+</body>
+</html>

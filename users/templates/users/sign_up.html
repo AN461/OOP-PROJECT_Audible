@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'users/sign_up.css' %}">
+    <script src="https://kit.fontawesome.com/30b80cadca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="heading">
+        <p>Express🎧📚</p>
+    </div>
+    <div class="container">
+        <p id="new">create a new account</p>
+        <p id="statement">Fill the below details to create account</p>
+        <form action="checking.html" id="form">
+            <div class="inputs">
+                <input type="text" name="username" id="user-name" placeholder="Username">
+                <i class="fas fa-exclamation-circle wrong"></i>
+                <i class="fas fa-check-circle correct"></i>
+                <small class="mssg">Error message</small>
+            </div>
+            <div class="inputs">
+                <input type="email" name="email" id="e-mail" placeholder="E-mail">
+                <i class="fas fa-exclamation-circle wrong"></i>
+                <i class="fas fa-check-circle correct"></i>
+                <small class="mssg">Error message</small>
+            </div>
+            <div class="inputs">
+                <input type="password" name="password" id="pass-word" placeholder="Password">
+                <i class="fas fa-exclamation-circle wrong"></i>
+                <i class="fas fa-check-circle correct"></i>
+                <small class="mssg">Error message</small>
+            </div>
+            <div class="inputs">
+                <input type="text" name="confirmpassword" id="confirm-password" placeholder="confirm Password">
+                <i class="fas fa-exclamation-circle wrong"></i>
+                <i class="fas fa-check-circle correct"></i>
+                <small class="mssg">Error message</small>
+            </div>
+            <button id="btn" type="submit">Sign up</button>
+            <h4>or</h4>
+            <a href="{% url 'login_page' %}" id="sign-in">log in</a>
+        </form>
+    </div>
+    <script src="{% static 'users/sign_up.js'%}"></script>
+</body>
+</html>

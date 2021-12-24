@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+}
+.validate{
+    font-size: medium;
+    font-weight: bolder;
+    color: rgb(110, 110, 110);
+}
+.validate p{
+    padding-bottom: 20px;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+.container{
+    border-radius: 10px;
+    text-align: center;
+    width: 60vh;
+    padding: 30px 20px 20px;
+    background-color: white;
+}
+
+#one,#two{
+    text-align: left;
+    color: gray;
+    padding: 10px 0px;
+}
+
+.container input{
+    width: 100%;
+    padding: 13px 10px;
+    margin: 10px 0px 20px;
+    background-color: rgb(233, 233, 233);
+    border: 2px solid lightgray;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#btn{
+    padding: 10px 10px;
+    font-size: large;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+.buttons p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

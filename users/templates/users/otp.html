@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp</title>
+    <link rel="stylesheet" href="{% static users/otp.css %}">
+</head>
+<body>
+    <div class="container">
+        <div class="validate">
+            <p>Validate OTP(One Time Password)</p>
+            <hr>
+        </div>
+        <form action="" id="form">
+            <p id="one">A One Time Password has been sent to your mail</p>
+            <p id="two">Please enter the OTP below to verify your Email Address.If you cannot see the mail then click on Resend OTP.</p>
+            <input type="text" name="otp" id="otp">
+            <div class="buttons">
+                <button id="btn" type="submit">Submit OTP</button>
+                <p>Resend OTP</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
